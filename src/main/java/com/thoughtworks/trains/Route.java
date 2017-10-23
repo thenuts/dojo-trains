@@ -1,17 +1,14 @@
 package com.thoughtworks.trains;
 
 public class Route {
-    public int calculateDistance(char startingTown, char endingTown) {
-        if (startingTown == endingTown) {
-            throw new IllegalArgumentException();
-        }
 
-        if (startingTown == 'B' && endingTown == 'C') {
+    private char startingTown;
+    private char endingTown;
+    private int distance;
 
-            return 4;
-        }
-
-
-        return 5;
+    public Route(char startingTown, char endingTown, int distance) {
+        this.startingTown = startingTown;
+        this.endingTown = endingTown;
+        this.distance = distance;
     }
 }
